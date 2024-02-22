@@ -1,4 +1,37 @@
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 const Projects = () => {
+  const [projects, setProjects] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  const getProjects = async () => {
+    const _header = {
+      "Content-Type": "application/json",
+      Authorization: "Api-Key WOFDN89h.FDznLXOkXJprRg8m38HKu6jVkaalz9wI",
+    };
+    const response = await axios.get("http://localhost:8000/api/projects", {
+      headers: _header,
+    });
+    // console.log('response', response.data);
+    setLoading(false);
+    setProjects(response.data);
+  };
+
+  useEffect(() => {
+    getProjects();
+    // console.log('projects', projects);
+  }, []);
+
+  // return (
+  //   <>
+  //   {loading? <div>...loading</div> : (projects.map((project) =>(
+  //     <div key={project.id}>Title: {project.name}</div>
+  //   )))}
+
+  //   </>
+  // )
+
   return (
     <section className="colorlib-work" data-section="work">
       <div className="colorlib-narrow-content">
@@ -8,14 +41,14 @@ const Projects = () => {
             data-animate-effect="fadeInLeft"
           >
             <span className="heading-meta">My Work</span>
-            <h2 className="colorlib-heading animate-box">Recent Work</h2>
+            <h2 className="colorlib-heading animate-box">Recent Projects</h2>
           </div>
         </div>
         <div
           className="row row-bottom-padded-sm animate-box"
           data-animate-effect="fadeInLeft"
         >
-          <div className="col-md-12">
+          {/* <div className="col-md-12">
             <p className="work-menu">
               <span>
                 <a href="#" className="active">
@@ -32,45 +65,49 @@ const Projects = () => {
                 <a href="#">Apps</a>
               </span>
             </p>
-          </div>
+          </div> */}
         </div>
         <div className="row">
-          <div
-            className="col-md-6 animate-box"
-            data-animate-effect="fadeInLeft"
-          >
-            <div
-              className="project"
-              style={{backgroundImage: "url(static/images/img-1.jpg)"}}
-            >
-              <div className="desc">
-                <div className="con">
-                  <h3>
-                    <a href="work.html">Work 01</a>
-                  </h3>
-                  <span>Website</span>
-                  <p className="icon">
-                    <span>
-                      <a href="#">
-                        <i className="icon-share3"></i>
-                      </a>
-                    </span>
-                    <span>
-                      <a href="#">
-                        <i className="icon-eye"></i> 100
-                      </a>
-                    </span>
-                    <span>
-                      <a href="#">
-                        <i className="icon-heart"></i> 49
-                      </a>
-                    </span>
-                  </p>
+          {loading ? (
+            <div>...loading</div>
+          ) : (
+            projects.map((project) => (
+            <>
+              <div className="col-md-6" data-animate-effect="fadeInLeft">
+                <div
+                  className="project"
+                  style={{ backgroundImage: "url(static/images/img-1.jpg)" }}
+                >
+                  <div className="desc">
+                    <div className="con">
+                      <h3>
+                        <a href="work.html">{project.name}</a>
+                      </h3>
+                      <span>Website</span>
+                      <p className="icon">
+                        <span>
+                          <a href="#">
+                            <i className="icon-share3"></i>
+                          </a>
+                        </span>
+                        <span>
+                          <a href="#">
+                            <i className="icon-eye"></i> 100
+                          </a>
+                        </span>
+                        <span>
+                          <a href="#">
+                            <i className="icon-heart"></i> 49
+                          </a>
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div
+            </>)
+          ))}
+          {/* <div
             className="col-md-6 animate-box"
             data-animate-effect="fadeInRight"
           >
@@ -104,8 +141,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-6 animate-box" data-animate-effect="fadeInTop">
+          </div> */}
+          {/* <div className="col-md-6 animate-box" data-animate-effect="fadeInTop">
             <div
               className="project"
               style={{backgroundImage: "url(static/images/img-3.jpg)"}}
@@ -136,8 +173,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className="col-md-6 animate-box"
             data-animate-effect="fadeInBottom"
           >
@@ -171,8 +208,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className="col-md-6 animate-box"
             data-animate-effect="fadeInLeft"
           >
@@ -206,8 +243,8 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </div> */}
+          {/* <div
             className="col-md-6 animate-box"
             data-animate-effect="fadeInRight"
           >
@@ -241,7 +278,7 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* <div className="row">
           <div className="col-md-12 animate-box">
