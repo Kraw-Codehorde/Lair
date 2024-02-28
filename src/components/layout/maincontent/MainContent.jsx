@@ -46,7 +46,7 @@ const MainContent = () => {
   return (
     <>
     <div id="colorlib-main">
-    <HomePage />
+    {/* <HomePage /> */}
     <About />
     <Services />
     <Experience />

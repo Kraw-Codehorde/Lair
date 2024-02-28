@@ -75,7 +75,7 @@ const About = () => {
                 </div>
               </div>
             </div>
-            <div className="row">
+            {/* <div className="row">
               <div
                 className="col-md-12 animate-box"
                 data-animate-effect="fadeInLeft"
@@ -90,7 +90,7 @@ const About = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
