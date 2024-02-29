@@ -8,7 +8,7 @@ const Projects = () => {
   const getProjects = async () => {
     const _header = {
       "Content-Type": "application/json",
-      Authorization: "Api-Key WOFDN89h.FDznLXOkXJprRg8m38HKu6jVkaalz9wI",
+      Authorization: "Api-Key cqpiFIS2.TnvxK5pp3jNNE8gzyLB1EgEtm3TgXwkF",
     };
     const response = await axios.get("http://localhost:8000/api/projects", {
       headers: _header,
