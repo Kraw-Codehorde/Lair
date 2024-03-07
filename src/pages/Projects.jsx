@@ -76,14 +76,14 @@ const Projects = () => {
               <div className="col-md-6" data-animate-effect="fadeInLeft">
                 <div
                   className="project"
-                  style={{ backgroundImage: "url(static/images/img-1.jpg)" }}
+                  style={{ backgroundImage: `url(${project.image})` }}
                 >
                   <div className="desc">
                     <div className="con">
                       <h3>
-                        <a href="work.html">{project.name}</a>
+                        <a href={project.url}>{project.name}</a>
                       </h3>
-                      <span>Website</span>
+                      <span>{project.description}</span>
                       <p className="icon">
                         <span>
                           <a href="#">

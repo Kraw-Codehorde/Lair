@@ -22,7 +22,7 @@ const Contact = () => {
               </div>
               <div className="colorlib-text">
                 <p>
-                  <a href="#">info@domain.com</a>
+                  <a href="#">kraw.hq@gmail.com</a>
                 </p>
               </div>
             </div>
@@ -35,11 +35,11 @@ const Contact = () => {
                 <i className="icon-map"></i>
               </div>
               <div className="colorlib-text">
-                <p>198 West 21th Street, Suite 721 New York NY 10016</p>
+                <p>Currently @Buenos Aires</p>
               </div>
             </div>
 
-            <div
+            {/* <div
               className="colorlib-feature colorlib-feature-sm animate-box"
               data-animate-effect="fadeInLeft"
             >
@@ -51,9 +51,9 @@ const Contact = () => {
                   <a href="tel://">+123 456 7890</a>
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
-          <div className="col-md-7 col-md-push-1">
+          {/* <div className="col-md-7 col-md-push-1">
             <div className="row">
               <div
                 className="col-md-10 col-md-offset-1 col-md-pull-1 animate-box"
@@ -101,7 +101,7 @@ const Contact = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

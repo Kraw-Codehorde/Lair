@@ -10,21 +10,13 @@ const About = () => {
             >
               <div className="col-md-12">
                 <div className="about-desc">
-                  <span className="heading-meta">About Us</span>
+                  <span className="heading-meta">About Me</span>
                   <h2 className="colorlib-heading">Who Am I?</h2>
                   <p>
-                    <strong>Hi I'm Jackson Ford</strong> On her way she met a
-                    copy. The copy warned the Little Blind Text, that where it
-                    came from it would have been rewritten a thousand times and
-                    everything that was left from its origin would be the word
-                    "and" and the Little Blind Text should turn around and
-                    return to its own, safe country.
+                    <strong>Hello and Welcome to this portfolio of mine, I'm Nico, and among many other things, a Full Stack Developer.</strong> Since i was little i've been exploring, tinkering and playing with computers. I hope we can get to know each other and work together to create something awesome.
                   </p>
                   <p>
-                    Even the all-powerful Pointing has no control about the
-                    blind texts it is an almost unorthographic life One day
-                    however a small line of blind text by the name of Lorem
-                    Ipsum decided to leave for the far World of Grammar.
+                    This portfolio is a place where i can showcase my skills and projects. For reference, this portfolio is pulling projects from a personal API, and the frontend is fully constructed using React. I hope you enjoy it and feel free to contact me if you have any questions. As time goes by, more projects will automatically be added/updated. Have a nice day!
                   </p>
                 </div>
               </div>
@@ -36,9 +28,9 @@ const About = () => {
               >
                 <div className="services color-1">
                   <span className="icon2">
-                    <i className="icon-bulb"></i>
+                  <img src="static/images/full-stack.png" width="50" height="50" alt="fs" />
                   </span>
-                  <h3>Graphic Design</h3>
+                  <h3>Full Stack Developer</h3>
                 </div>
               </div>
               <div
@@ -47,9 +39,9 @@ const About = () => {
               >
                 <div className="services color-2">
                   <span className="icon2">
-                    <i className="icon-globe-outline"></i>
+                  <img src="static/images/cloud.png" width="50" height="50" alt="cloud" />
                   </span>
-                  <h3>Web Design</h3>
+                  <h3>Cloud Computing</h3>
                 </div>
               </div>
               <div
@@ -58,9 +50,9 @@ const About = () => {
               >
                 <div className="services color-3">
                   <span className="icon2">
-                    <i className="icon-data"></i>
+                  <img src="static/images/software-development.png" width="50" height="50" alt="se" />
                   </span>
-                  <h3>Software</h3>
+                  <h3>Software Engineering</h3>
                 </div>
               </div>
               <div
@@ -69,9 +61,9 @@ const About = () => {
               >
                 <div className="services color-4">
                   <span className="icon2">
-                    <i className="icon-phone3"></i>
+                  <img src="static/images/database-storage.png" width="50" height="50" alt="db" />
                   </span>
-                  <h3>Application</h3>
+                  <h3>DB Management</h3>
                 </div>
               </div>
             </div>
