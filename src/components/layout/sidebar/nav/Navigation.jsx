@@ -20,11 +20,11 @@ const Navigation = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a href="#" data-nav-section="experience">
               Experience
             </a>
-          </li>
+          </li> */}
           <li>
             <a href="#" data-nav-section="work">
               Projects

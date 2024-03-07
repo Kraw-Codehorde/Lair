@@ -49,7 +49,7 @@ const MainContent = () => {
     {/* <HomePage /> */}
     <About />
     <Services />
-    <Experience />
+    {/* <Experience /> */}
     <Projects />
     <Contact />
     </div>
