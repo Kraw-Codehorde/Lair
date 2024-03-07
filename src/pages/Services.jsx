@@ -28,8 +28,8 @@ const Services = () => {
                 <div className="desc">
                   <h3>Python</h3>
                   <p>
-                    Development of technologies and applications using Python
-                    libraries, frameworks and tools.
+                   
+                    Django, Flask, DRF, Others
                   </p>
                 </div>
               </div>
@@ -47,9 +47,7 @@ const Services = () => {
                 <div className="desc">
                   <h3>JavaScript</h3>
                   <p>
-                    Development of technologies and applications using
-                    JavaScript libraries, frameworks and tools. Notably Nodejs
-                    and Reactjs.
+                    Nodejs, Reactjs, Others
                   </p>
                 </div>
               </div>
@@ -67,7 +65,7 @@ const Services = () => {
                 <div className="desc">
                   <h3>Docker</h3>
                   <p>
-                    Use of Docker containers to create and deploy applications.
+                    Docker, Kubernets, Others
                   </p>
                 </div>
               </div>
@@ -84,7 +82,41 @@ const Services = () => {
                 </span>
                 <div className="desc">
                   <h3>Amazon Web Services</h3>
-                  <p>Expertise in Cloud Computing using services like AWS.</p>
+                  <p>
+                    EC2, S3, Others
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 text-center animate-box">
+              <div className="services color-5">
+                <span className="icon">
+                  <img
+                    src="static/images/database-storage.png"
+                    width="50"
+                    height="50"
+                    alt="AWS"
+                  />
+                </span>
+                <div className="desc">
+                  <h3>DataBases</h3>
+                  <p>SQLite, PSQL, Mongo, Others</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-4 text-center animate-box">
+              <div className="services color-4">
+                <span className="icon">
+                  <img
+                    src="static/images/telegram-logo.png"
+                    width="50"
+                    height="50"
+                    alt="AWS"
+                  />
+                </span>
+                <div className="desc">
+                  <h3>Message Brokers</h3>
+                  <p>RabbitMQ, Redis, Amazon</p>
                 </div>
               </div>
             </div>

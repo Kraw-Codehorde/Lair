@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Footer = () => {
   return (
@@ -17,12 +17,7 @@ const Footer = () => {
               ThemeWagon
             </a>
           </span>{" "}
-          <span>
-            Demo Images:{" "}
-            <a href="https://unsplash.com/" target="_blank">
-              Unsplash.com
-            </a>
-          </span>
+          
         </small>
       </p>
       <ul>
