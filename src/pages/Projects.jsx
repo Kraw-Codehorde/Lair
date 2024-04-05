@@ -10,7 +10,7 @@ const Projects = () => {
       "Content-Type": "application/json",
       Authorization: "Api-Key cqpiFIS2.TnvxK5pp3jNNE8gzyLB1EgEtm3TgXwkF",
     };
-    const response = await axios.get("http://localhost:8000/api/projects", {
+    const response = await axios.get("http://ec2-3-141-168-160.us-east-2.compute.amazonaws.com:1337/api/projects", {
       headers: _header,
     });
     // console.log('response', response.data);
