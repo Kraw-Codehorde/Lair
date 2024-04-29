@@ -9,7 +9,7 @@ const Projects = () => {
     const _header = {
       "Content-Type": "application/json",
       Authorization: "Api-Key cqpiFIS2.TnvxK5pp3jNNE8gzyLB1EgEtm3TgXwkF",
-      Origin: '',
+      Origin: window.location.origin,
     };
     const response = await axios.get("https://api.krawcodehorde.xyz:1338/api/projects", {
       headers: _header,
