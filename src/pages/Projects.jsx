@@ -99,7 +99,11 @@ const Projects = () => {
                           <span>
                             {project.id >= 5 && project.id <= 8 ? (
                               <a href={mapIdToUrl[project.id]}>
-                                <i className="icon-share3"></i>
+                                {/* <i className="icon-share3"></i> */}
+                                <i className="icon-share3">
+                                  <img src='static/images/github-mark.png'
+                                  height="15" width="15" />
+                                </i>
                               </a>
                             ) : (
                               <span>
@@ -110,7 +114,7 @@ const Projects = () => {
                             )}
                           </span>
 
-                          <span>
+                          {/* <span>
                             <a href="#">
                               <i className="icon-eye"></i> 100
                             </a>
@@ -119,7 +123,7 @@ const Projects = () => {
                             <a href="#">
                               <i className="icon-heart"></i> 49
                             </a>
-                          </span>
+                          </span> */}
                         </p>
                       </div>
                     </div>
