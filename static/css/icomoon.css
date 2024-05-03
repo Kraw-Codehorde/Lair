@@ -1193,6 +1193,7 @@
 }
 .icon-share3:before {
   content: "\e0b5";
+  display: none;
 }
 .icon-marquee:before {
   content: "\e0b6";
