@@ -5,7 +5,8 @@ const Profile = () => {
     <div className="text-center">
       <div
         className="author-img"
-        style={{ backgroundImage: 'url(https://media.licdn.com/dms/image/D4D03AQEStFYA3mZ6nQ/profile-displayphoto-shrink_400_400/0/1709851423480?e=1715212800&v=beta&t=oJm10-d0xEvl6edC0vv2eUgzsdpnH23AEbQyHkk3OEA)' }}
+        // style={{ backgroundImage: 'url(https://media.licdn.com/dms/image/D4D03AQEStFYA3mZ6nQ/profile-displayphoto-shrink_400_400/0/1709851423480?e=1715212800&v=beta&t=oJm10-d0xEvl6edC0vv2eUgzsdpnH23AEbQyHkk3OEA)' }}
+        style={{ backgroundImage: 'url(static/images/pfp.jpg)' }}
       ></div>
       <h1 id="colorlib-logo">
         <a href="index.html">Nico D Kraw</a>
